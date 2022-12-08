@@ -3,4 +3,5 @@ We created survey and python program to create a "compatibility score" for any t
 
 The program analyzed the unformatted text in the existing spreadsheet, and comapred the similarity of different rommate's entries to create a "compatibility score". It awarded weighted points for similar sleep schedules, music taste, majors, etc.
 
-HowardCEA is the unformatted csv file of student responses, RoomateData is the compatibility scores
+HowardCEA is the unformatted csv file of student responses, RoommateData is the compatibility scores. 
+Roomate.py is the file that holds the survery program that calculates the compatibility score. Users can pick and choose who they contact from veiwing the live database csv files. 
