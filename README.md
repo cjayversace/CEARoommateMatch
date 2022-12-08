@@ -5,3 +5,6 @@ The program analyzed the unformatted text in the existing spreadsheet, and comap
 
 HowardCEA is the unformatted csv file of student responses, RoommateData is the compatibility scores. 
 Roomate.py is the file that holds the survery program that calculates the compatibility score. Users can pick and choose who they contact from veiwing the live database csv files. 
+
+
+![IMG_9272](https://user-images.githubusercontent.com/84060702/206353098-0cf4ae04-acc7-4436-a690-2974aa7e18ad.PNG)
