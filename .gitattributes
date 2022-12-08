@@ -1,0 +1,39 @@
+# Add the following content to a file on the root of the repository in the 
+# working branch, and name it .gitattributes
+----------------------------------------------------------------------------
+# Set the default behaviour, in case people don't have core.autocrlf set.
+* text=auto
+
+# Explicitly declare the text files you want to always be normalised and converted
+# to native line endings on checkout.
+*.cs text
+*.json text
+*.html text
+*.csproj text
+
+# Declare files that will always have CRLF line endings on checkout.
+*.sln text eol=crlf
+
+# Denote all files that are truly binary and should not be modified.
+*.png binary
+*.jpg binary
+*.gif binary
+----------------------------------------------------------------------------
+
+# From the root of the repository in the working branch remove everything from the index 
+# (don't forget the '.')
+git rm --cached -r .
+
+# Re-add all the deleted files to the index
+# (You should get lots of messages like:
+#   warning: CRLF will be replaced by LF in <file>.)
+git diff --cached --name-only -z | xargs -0 git add
+
+# Commit
+git commit -m "Fixed the line ending issue"
+
+# Sync the code
+
+# Switch to the master branch 
+
+# Update (merge) from the working branch
