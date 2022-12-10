@@ -1,0 +1,26 @@
+.rightside, .leftside {
+    height: 100vh;
+    width: 100%;
+}
+
+.leftside {
+    background-color: white;
+}
+
+.rightside {
+    background: white;
+}
+
+
+button {
+
+    background-color: white;
+    border: none;
+    position: absolute;
+    top: 60%;
+    left: 14%;
+    padding: 13px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
